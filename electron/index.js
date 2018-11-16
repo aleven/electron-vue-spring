@@ -12,7 +12,7 @@ const { app, BrowserWindow, dialog } = electron;
 let mainWindow;
 
 // The server process
-const JAR = 'spring-1.0.0.jar'; // how to avoid manual update of this?
+const JAR = 'spring.jar'; // how to avoid manual update of this?
 const MAX_CHECK_COUNT = 10;
 let serverProcess;
 
