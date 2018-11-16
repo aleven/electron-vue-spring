@@ -76,7 +76,7 @@ function loadHomePage(baseUrl) {
   checkCount = 0;
   const axios = require('axios');
   setTimeout(function cycle() {
-    axios.get(`${baseUrl}/health`)
+    axios.get(`${baseUrl}/actuator/health`)
       .then(response => {
         mainWindow.loadURL(`${baseUrl}?_=${Date.now()}`);
       })
